@@ -1,0 +1,8 @@
+git commands
+- git diff [old commit] [new commit] <- runs diff on git commit versions
+- git log --stat <- gives you basic information on changes you've made from commit to commit
+- git checkout [commit] <- this opens up an old git commit so you can check to see if there's a bug
+- git init <- creates a new git repository
+- git status <- shows which files have changed since the last commit
+- git add <- adds file to "the staging area" to be committed
+- git commit <- commits changes
