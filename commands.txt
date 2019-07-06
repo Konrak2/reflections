@@ -1,8 +1,36 @@
 git commands
+
 - git diff [old commit] [new commit] <- runs diff on git commit versions
+- git diff <- with no arguments shows the difference between the working directory and staging area
+- git diff –staged <- shows the changes between staging area and the commit
+
+- git reset –hard <- resets changes from the last commit in working directory, this cannot be undone
+
 - git log --stat <- gives you basic information on changes you've made from commit to commit
+- git log –stat <- gives you basic information on changes you’ve made from commit to commit
+- git log –graph –online [commit1] [commit2] <- gives you visual representation of commits to different branches. 
+If you don’t include ‘–oneline’ it gives you something that’s fairly difficult to visualize
+
 - git checkout [commit] <- this opens up an old git commit so you can check to see if there's a bug
+- git checkout -b new-branch- <- creates a new branch so you can track your changes in your git log
+
 - git init <- creates a new git repository
 - git status <- shows which files have changed since the last commit
 - git add <- adds file to "the staging area" to be committed
-- git commit <- commits changes
+- git commit <- writes to your git repository
+- git commit -m ["commit message"] <- writes to git repository with the commit message
+
+- git branch <- shows branches
+- git branch easy-mode <- creates a new branch called “easy-mode”
+- git branch -d [branch] <- deletes branch name, not commits
+
+- git merge [branch1] <- merges the current branch with branch 1
+- git show [commit] <- shows you the difference between a file and it’s parent, cleaner to use than git diff
+
+- git remote <- this lets you know where remotely (ie github) you will be sending your commits to
+- git remote add [title of project, origin by default] [git url]
+
+- git push [title of commit, ie origin] [branch name] <- pushes to the remote git site that is displayed in git remote
+
+- git reset HEAD <- remove all files from the staging area
+- git reset HEAD [filename] <- remove specific file from staging area
